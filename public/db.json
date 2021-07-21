@@ -1,0 +1,145 @@
+
+{
+  "pizzas": [
+    {
+      "id": 0,
+      "imageUrl": "https://i.ibb.co/hshNGhV/2.png",
+      "name": "Снежный глаз",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 210,
+      "category": 0,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://i.ibb.co/h2x0bTS/6.png",
+      "name": "Охотник",
+      "types": [0],
+      "sizes": [3, 4],
+      "price": 90,
+      "category": 3,
+      "rating": 6
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://i.ibb.co/sPhWDnT/10.png",
+      "name": "Два облика",
+      "types": [0],
+      "sizes": [3, 4],
+      "price": 120,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://i.ibb.co/YTxwWkk/4.png",
+      "name": "Капля в глаз",
+      "types": [1],
+      "sizes": [3, 4, 7],
+      "price": 100,
+      "category": 1,
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://i.ibb.co/DRQZgDP/44.png",
+      "name": "Яд",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 130,
+      "category": 4,
+      "rating": 11
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://i.ibb.co/Wtf1rTf/8.png",
+      "name": "Ледяные губы",
+      "types": [0, 1],
+      "sizes": [3, 7],
+      "price": 200,
+      "category": 0,
+      "rating": 2
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://i.ibb.co/7jdyYxy/image.png",
+      "name": "Завораживающий взляд",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 134,
+      "category": 1,
+      "rating": 9
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://i.ibb.co/98Nw7hB/7.png",
+      "name": "Наш союзник",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 112,
+      "category": 4,
+      "rating": 10
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://i.ibb.co/gDkzcjJ/9.png",
+      "name": "Четыре сезона",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 148,
+      "category": 5,
+      "rating": 3
+    },
+    {
+      "id": 9,
+      "imageUrl": "https://i.ibb.co/1qj6Z1q/3.png",
+      "name": "Зеленый взгляд",
+      "types": [0, 1],
+      "sizes": [3, 4, 7],
+      "price": 160,
+      "category": 2,
+      "rating": 2
+    },
+    {
+      "id": 10,
+      "imageUrl": "https://i.ibb.co/0V6HKyX/13.png",
+      "name": "noName1",
+      "types": [0, 1],
+      "sizes": [ 4, 7],
+      "price": 163,
+      "category": 3,
+      "rating": 8
+    },
+    {
+      "id": 11,
+      "imageUrl": "https://i.ibb.co/2jFKV3H/14.png",
+      "name": "noName2",
+      "types": [0, 1],
+      "sizes": [ 7],
+      "price": 163,
+      "category": 1,
+      "rating": 7
+    },
+    {
+      "id": 12,
+      "imageUrl": "https://i.ibb.co/gjmsZgH/15.png",
+      "name": "noName3",
+      "types": [0, 1],
+      "sizes": [ 7],
+      "price": 190,
+      "category": 1,
+      "rating": 7
+    },
+    {
+      "id": 13,
+      "imageUrl": "https://i.ibb.co/KNjYD3Y/12.png",
+      "name": "noName4",
+      "types": [0, 1],
+      "sizes": [ 7],
+      "price": 170,
+      "category": 2,
+      "rating": 7
+    }
+  ]
+}
