@@ -104,7 +104,7 @@
     {
       "id": 10,
       "imageUrl": "https://i.ibb.co/0V6HKyX/13.png",
-      "name": "noName1",
+      "name": "Вольная лошадь",
       "types": [0, 1],
       "sizes": [ 4, 7],
       "price": 163,
@@ -114,7 +114,7 @@
     {
       "id": 11,
       "imageUrl": "https://i.ibb.co/2jFKV3H/14.png",
-      "name": "noName2",
+      "name": "Омут",
       "types": [0, 1],
       "sizes": [ 7],
       "price": 163,
@@ -124,7 +124,7 @@
     {
       "id": 12,
       "imageUrl": "https://i.ibb.co/gjmsZgH/15.png",
-      "name": "noName3",
+      "name": "Доминация",
       "types": [0, 1],
       "sizes": [ 7],
       "price": 190,
@@ -134,7 +134,7 @@
     {
       "id": 13,
       "imageUrl": "https://i.ibb.co/KNjYD3Y/12.png",
-      "name": "noName4",
+      "name": "Ясность",
       "types": [0, 1],
       "sizes": [ 7],
       "price": 170,

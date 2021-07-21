@@ -387,6 +387,8 @@ body {
       }
 
       .pay-btn {
+        transition: 0.5s ease;
+        border-radius: 10px;
         font-size: 16px;
         font-weight: 600;
         width: 210px;
@@ -394,6 +396,15 @@ body {
         background: rgb(253,148,29);
         background: linear-gradient(90deg, rgba(253,148,29,1) 86%, rgba(252,176,69,1) 100%);
         cursor: pointer;
+        border: none;
+        &:hover{
+          box-shadow: 0 0 0 7px rgb(231, 136, 30),
+          0 0 0 14px rgba(177, 114, 46, 0.42),
+          0 0 0 21px rgba(177, 125, 46, 0.22);
+          font-size: 17px;
+         color: #1a1a1a;
+        }
+
       }
 
       @media (max-width: 500px) {

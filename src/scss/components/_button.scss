@@ -34,6 +34,7 @@
   }
 
   &--circle {
+    transition: 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,6 +43,15 @@
     min-width: 32px;
     padding: 0;
     border-width: 2px;
+    background: inherit;
+    border-radius: 10px;
+
+    &:hover{
+      background: red;
+      color: black;
+
+    }
+
   }
 
   &--black {

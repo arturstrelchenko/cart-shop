@@ -31,6 +31,10 @@ const onMinusItem = (id) =>{
         dispatch(minusCartItem(id))
 }
 
+    const showOrder = () => {
+        console.log(items)
+    }
+
     return (
         <div className="container container--cart">
             {totalCount?<div className="cart">
@@ -120,6 +124,7 @@ const onMinusItem = (id) =>{
                                       onRemove={onRemoveItem}
                                       onMinus={onMinusItem}
                                       onPlus={onPlusItem}
+                                      key={obj.id}
                             />
                         )
                     })}
@@ -154,11 +159,23 @@ const onMinusItem = (id) =>{
                                 <span>Вернуться назад</span>
                             </Link>
                         </a>
-                        <button className="pay-btn">
+                        <button className="pay-btn" onClick={showOrder}>
                             <span>Оплатить сейчас</span>
                         </button>
                     </div>
                 </div>
+
+                <div>
+                    {/*{console.log(addedPizzas)}*/}
+                    {/*{addedPizzas.map((item,key)=>{*/}
+                    {/*  return(*/}
+                    {/*      <p key={key}>*/}
+                    {/*          {item.name}*/}
+                    {/*      </p>*/}
+                    {/*  )*/}
+                    {/*})}*/}
+                </div>
+
             </div>
 
                 :

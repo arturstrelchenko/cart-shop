@@ -38,6 +38,7 @@ const Home = () => {
 
 
    const handleAddPizza = (obj) => {
+       console.log(obj)
        dispatch({
            type:"ADD_PIZZA_CART",
            payload:obj
