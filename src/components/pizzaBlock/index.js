@@ -2,20 +2,31 @@ import React, {useState} from 'react';
 import classNames from 'classnames';
 import PropTypes from "prop-types";
 import {Modal} from "antd";
+import ModalImg from "./modalImg";
 
 
 
 const PizzaBlock = ({id,name,imageUrl,price,types,sizes,onClickAddPizza,addedCount}) => {
     const availableTypes=['паталь-акварель','акварель']
     const availableSizes=[3,4,7]
+    const [isModalVisible, setIsModalVisible] = useState(false);
 
     const [activeType,setActiveType] = useState(types?types[0]:0)
-    const [activeSize,setActiveSize] = useState(0)
+    const [activeSize,setActiveSize] = useState(undefined)
+
+
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
+
 
     const onSelectedType = (index) =>{
         setActiveType(index)
+
     }
     const onSelectedSize = (index) =>{
+
         setActiveSize(index)
     }
 
@@ -28,8 +39,12 @@ const PizzaBlock = ({id,name,imageUrl,price,types,sizes,onClickAddPizza,addedCou
             sizes:availableSizes[activeSize],
             types:availableTypes[activeType],
         }
+          if (activeSize){
+              onClickAddPizza(obj)
+          }else {
+              alert('Выберите пожалуйста размер')
+          }
 
-        onClickAddPizza(obj)
     }
 
 
@@ -41,37 +56,38 @@ const PizzaBlock = ({id,name,imageUrl,price,types,sizes,onClickAddPizza,addedCou
                     className="pizza-block__image"
                     src={imageUrl}
                     alt="Card"
-                    onClick={()=>console.log(imageUrl)}
+                    onClick={showModal}
                 />
-
+                 <ModalImg isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible} imgCart={imageUrl} name={name}/>
                 <h4 className="pizza-block__title">{name}</h4>
                 <div className="pizza-block__selector">
                     <ul>
-                        {availableTypes.map((item,key)=>{
+                        {availableTypes.map((type,index)=>{
                             return(
-                                <li key={key}
-                                className={classNames({
-                                    active: activeType === key,
-                                    disabled: !types?.includes(key)
+                                <li key={index}
+                                    className={classNames({
+                                    active: activeType === index,
+                                    disabled: !types?.includes(index)
                                 })}
-                                onClick={()=>onSelectedType(key)}
+                                onClick={()=>onSelectedType(index)}
                                 >
-                                    {item}
+                                    {type}
                                 </li>
                             )
                         })}
                     </ul>
+                    <hr/>
                     <ul>
-                        {availableSizes.map((item,key)=>{
+                        {availableSizes.map((size,index)=>{
                             return(
-                                <li key={key}
+                                <li key={index}
                                     className={classNames({
-                                        active: activeSize === key,
-                                        disabled: !sizes?.includes(item)
+                                        active: activeSize === index,
+                                        disabled: !sizes.includes(size)
                                     })}
-                                    onClick={()=>onSelectedSize(key)}
+                                    onClick={()=>onSelectedSize(index)}
                                 >
-                                    A{item}
+                                    A{size}
                                 </li>
                             )
                         })}

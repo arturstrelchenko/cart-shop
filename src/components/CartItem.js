@@ -1,8 +1,14 @@
-import React from 'react';
-import {useDispatch} from "react-redux";
+import React, {useState} from 'react';
+import ModalImg from "./pizzaBlock/modalImg";
+
+
 
 const CartItem = ({id,name,type,size,img,totalPrice,totalCount,onRemove,onMinus,onPlus}) => {
-const dispatch = useDispatch();
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const showModal = () => {
+        setIsModalVisible(true);
+    };
 
 const handleRemoveClick = () =>{
         onRemove(id)
@@ -23,7 +29,9 @@ onMinus(id)
                     className="pizza-block__image"
                     src={img}
                     alt="Cart"
+                    onClick={showModal}
                 />
+            <ModalImg isModalVisible={isModalVisible} setIsModalVisible={setIsModalVisible} imgCart={img} name={name}/>
             </div>
             <div className="cart__item-info">
                 <h3>{name}</h3>

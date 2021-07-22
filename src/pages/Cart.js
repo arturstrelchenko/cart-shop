@@ -7,32 +7,33 @@ import {clearCart, minusCartItem, plusCartItem, removeCartItem} from "../redux/a
 
 const Cart = () => {
     const {items,totalCount,totalPrice} = useSelector(({cart})=>cart)
+    const dispatch = useDispatch();
 
     const addedPizzas = Object.keys(items).map((key)=>{
         return items[key].items[0]
     })
-    const dispatch = useDispatch();
 
     const onClearCard  = () =>{
         if(window.confirm("Вы действительно хотите очистить корзину")) {
             dispatch(clearCart())
         }
     }
-const onRemoveItem = (id) =>{
+     const onRemoveItem = (id) =>{
     if (window.confirm("Вы действительно хотите удалить карту")) {
      dispatch(removeCartItem(id))
     }
-
 }
+
 const onPlusItem = (id) =>{
         dispatch(plusCartItem(id))
 }
+
 const onMinusItem = (id) =>{
         dispatch(minusCartItem(id))
 }
 
     const showOrder = () => {
-        console.log(items)
+        console.log(addedPizzas)
     }
 
     return (

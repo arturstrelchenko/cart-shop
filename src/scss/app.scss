@@ -8,6 +8,10 @@ body {
   padding: 50px 0;
   @media (max-width: 768px) {
     padding: 20px 0;
+    width: auto!important;
+  }
+  hr{
+    opacity: 0.30;
   }
 }
 
@@ -30,6 +34,7 @@ body {
     margin: 35px 0;
     @media (max-width: 768px) {
       font-size: 36px;
+      text-align: center;
     }
   }
 
@@ -171,6 +176,7 @@ body {
 
       @media (max-width: 768px) {
         width: 100%;
+        height: 250px;
         justify-content: center;
         order: 1;
       }
@@ -337,10 +343,13 @@ body {
     &-details {
       display: flex;
       justify-content: space-between;
+      align-items: center;
 
       span {
         font-size: 22px;
-
+        @media (max-width: 768px) {
+          font-size: 15px;
+        }
         &:last-of-type {
           b {
             color: $orange;
@@ -392,6 +401,7 @@ body {
         font-size: 16px;
         font-weight: 600;
         width: 210px;
+        margin: 0 auto;
         padding: 16px;
         background: rgb(253,148,29);
         background: linear-gradient(90deg, rgba(253,148,29,1) 86%, rgba(252,176,69,1) 100%);
@@ -401,7 +411,6 @@ body {
           box-shadow: 0 0 0 7px rgb(231, 136, 30),
           0 0 0 14px rgba(177, 114, 46, 0.42),
           0 0 0 21px rgba(177, 125, 46, 0.22);
-          font-size: 17px;
          color: #1a1a1a;
         }
 

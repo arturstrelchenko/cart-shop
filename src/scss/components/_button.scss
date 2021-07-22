@@ -145,8 +145,8 @@
     align-items: center;
     line-height: 23px;
     padding: 12px 25px;
-&:hover{
-  box-shadow: 12px 7px 7px gray;
+&:active{
+  transform: translateY(15px);
 }
     svg {
       margin-right: 8px;

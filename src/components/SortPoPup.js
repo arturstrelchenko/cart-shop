@@ -43,7 +43,7 @@ import PropTypes from "prop-types";
                           fill="#2C2C2C"
                       />
                   </svg>
-                  <b>Сортировка по:</b>
+                  <b><i>Сортировка по:</i></b>
                   <span
                       onClick={togglePopup}
                   >{activeLabel}</span>
